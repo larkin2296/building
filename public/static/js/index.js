@@ -1,5 +1,6 @@
 $(function(){
     var i = 0;
+    $('.honor_main_main li').eq(0).fadeIn();
     $('.building_first ul li').eq(i).fadeIn();
     $('.building_both ul li').eq(i).fadeIn();
     $('.building_both .prev_button').click(function(){
@@ -42,7 +43,12 @@ $(function(){
 
         $('.building_first ul li').eq(i).fadeIn();
     })
-})
+});
+ $('.honor_main_list li').click(function(){
+     $('.honor_main_main li').css('display','none');
+     var a = $(this).index();
+     $('.honor_main_main li').eq(a).fadeIn();
+ });
 var html = document.documentElement;
 
 // 封装一个函数
@@ -61,8 +67,7 @@ window.onresize = function(){
     fontS();
 }
 var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    centeredSlides: true,
+    setWrapperSize :true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -93,10 +98,10 @@ $(window).scroll(function() {
         }else if(top > html*5.23 && top<html*6.05){
             $('.top_meau ul li').removeClass('active');
             $('.top_meau ul li').eq(3).addClass('active');
-        }else if(top>html*6.05 && top < html*7.08){
+        }else if(top>html*6.05 && top < html*6.18){
             $('.top_meau ul li').removeClass('active');
             $('.top_meau ul li').eq(4).addClass('active');
-        }else if( top > html*7.08){
+        }else if( top > html*6.18){
             $('.top_meau ul li').removeClass('active');
             $('.top_meau ul li').eq(5).addClass('active');
         }else{
@@ -110,9 +115,13 @@ $(window).scroll(function() {
     }
 });
 $('.honor_main_list li').click(function(){
-    $('.honor_main_list li').css('border','border: 1px solid #EBEBEB');
+    $('.honor_main_list li').css('border','1px solid #EBEBEB');
     $(this).css('border','1px solid #D0C6B7');
 })
 $('.go_top_pic').click(function(){
     $("html,body").animate({scrollTop:0},1000);
+})
+$(function(){
+    //FF下用JS实现自定义滚动条
+    $(".honor_main_list").niceScroll({cursorborder:"",cursorcolor:"rgba(0,0,0,0)",boxzoom:true});
 })

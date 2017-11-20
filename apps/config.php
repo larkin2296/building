@@ -233,7 +233,7 @@ return [
         '__static__'=>dirname($_SERVER['SCRIPT_NAME']).'/public/static',
 //        //或者
 //        '__static__'=>dirname(__DIR__).'/public/static',
-        '__back__' =>'http://localhost/lianxing',
+        '__back__' =>'http://localhost/building',
     ],
 //    'NAMESPACE_URL' => 'http://localhost/new_web',
 ];

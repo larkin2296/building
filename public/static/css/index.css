@@ -6,6 +6,69 @@
     font-family:  PingFangSC-Regular;
     src: url('font/PingFang-SC-Regular.otf');
 }
+.honor_main_list::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
+.honor_main_list::-webkit-scrollbar-button    {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar-track     {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar-track-piece {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar-thumb{
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar-corner {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar-resizer  {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-webkit-scrollbar {
+    width:10px;
+    height:10px;
+}
+/*o内核*/
+.honor_main_list .-o-scrollbar{
+    -moz-appearance: none !important;
+    background: rgba(0,255,0,0) !important;
+}
+.honor_main_list::-o-scrollbar-button    {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-o-scrollbar-track     {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-o-scrollbar-track-piece {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-o-scrollbar-thumb{
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-o-scrollbar-corner {
+    background-color:rgba(0,0,0,0);
+}
+.honor_main_list::-o-scrollbar-resizer  {
+    background-color:rgba(0,0,0,0);
+}
+/*IE10,IE11,IE12*/
+.scroll_content{
+    -ms-scroll-chaining: chained;
+    -ms-overflow-style: none;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 500%;
+    -ms-scroll-snap-type: proximity;
+    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
 html,body{
     width:100%;
     height:100%;
@@ -72,14 +135,14 @@ html,body{
 .top_meau ul li{
     list-style: none;
     float: left;
-    width: 12.6%;
+    width: 14.6%;
     height: 60%;
     margin-top: 5%;
     font-family: PingFangSC-Light;
-    font-size: 170%;
+    font-size: 140%;
     color: #000000;
     letter-spacing: 0;
-    margin-left: 4%;
+    margin-left: 2%;
     text-align: center;
     cursor: pointer;
 }
@@ -145,6 +208,7 @@ html,body{
     margin-top: 10%;
     float: left;
     margin-left: 7%;
+    overflow:scroll;
 }
 .honor_main_list li{
     list-style: none;
@@ -173,6 +237,7 @@ html,body{
     height:100%;
     list-style: none;
     position: relative;
+    display: none;
 }
 .h_m_m_word{
     width: 40%;
@@ -480,6 +545,9 @@ html,body{
     float: right;
     margin-right: 4%;
     width: 25%;
+}
+.contact_right img{
+    cursor: pointer;
 }
 .contact_bottom{
     width:100%;

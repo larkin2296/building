@@ -126,7 +126,7 @@ html,body{
     margin-top:3%;
 }
 .top_meau ul{
-    width:60%;
+    width:68%;
     height:100%;
     margin:0px;
     padding:0px;
@@ -135,7 +135,7 @@ html,body{
 .top_meau ul li{
     list-style: none;
     float: left;
-    width: 14.6%;
+    width: 11.6%;
     height: 60%;
     margin-top: 5%;
     font-family: PingFangSC-Light;

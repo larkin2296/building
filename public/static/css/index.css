@@ -370,12 +370,14 @@ html,body{
     padding:0px;
     margin:0 auto;
     margin-top:1%;
+    overflow: hidden;
 }
 .building_center ul li{
     display: none;
     list-style: none;
     width:100%;
     height:100%;
+    overflow: hidden;
 }
 .building_center_pic{
     width:100%;
@@ -441,9 +443,11 @@ html,body{
     border-bottom: 1px solid #EBEBEB;
 }
 .technology .tech_main{
-    width:90%;
-    height:80%;
+    width: 63%;
+    height: 52%;
     margin: 5% auto;
+    background: url('../img/fazhan.png') no-repeat;
+    background-size: contain;
 }
 .tech_main li{
     list-style: none;
@@ -472,7 +476,7 @@ html,body{
 }
 .designer{
     width: 84%;
-    height: 72%;
+    height: 78%;
     margin: 0 auto;
     background: url('../img/Group17.png');
     overflow: hidden;
